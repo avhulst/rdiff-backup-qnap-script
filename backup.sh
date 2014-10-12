@@ -84,8 +84,8 @@ MSG=`rdiff-backup --list-increments $DEST`
 SUBJECT2=" erfolgreich!" 
 MESSAGE="Hallo,
 
-die Backup von ${BACKUPSERVER} wurde am ${DATUM} erfolgreich fertiggestellt.
-Backupdauer $STD Stunden $MIN Minuten und  $SEC Sekunden
+das Backup von ${BACKUPSERVER} wurde am ${DATUM} erfolgreich fertiggestellt.
+Backupdauer $STD Stunde(n) $MIN Minuten und  $SEC Sekunden
 
 Mit freundlichem Gruss 
 Backupscript
