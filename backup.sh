@@ -5,8 +5,8 @@
 #Backup Einstellungen
 SSHUSER="root"
 BACKUPSERVER="mein.server.tld"
-REPORTMAILTO="andreas@vanhulst.de"                             
-REPORTMAILFROM="backup@vanhulst.de"
+REPORTMAILTO="me@example.com"                             
+REPORTMAILFROM="backup@example.com"
 REMOTEBACKUPPATH=/home
 LOCALBACKUPPATH=./
 SUBJECT="rdiff-backup $BACKUPSERVER"
