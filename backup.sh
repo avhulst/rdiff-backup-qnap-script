@@ -47,7 +47,7 @@ mailme
 fi
 
 # Backup durchführen
-rdiff-backup -v5 --print-statistics --include-globbing-filelist $BACKUPSERVER.list $SOURCE $DEST
+/opt/bin/rdiff-backup -v5 --print-statistics --include-globbing-filelist $BACKUPSERVER.list $SOURCE $DEST
 
 # erfolgreich falls nicht mail
 if [ $? -ne 0 ]; then
@@ -62,7 +62,7 @@ mailme
   exit 1 
 fi
 
-rdiff-backup --remove-older-than $OLDERTHAN --force $DEST
+/opt/bin/rdiff-backup --remove-older-than $OLDERTHAN --force $DEST
 if [ $? -ne 0 ]; then
 SUBJECT2=" fehler beim loeschen der alten Backupdaten!" 
 MESSAGE="Hallo,
